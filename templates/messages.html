@@ -1,0 +1,8 @@
+<title> Messages </title>
+
+<h1> All Messages </h1>
+
+{% for message in messages %}
+<a href="/messages/{{ message.message_id }}"><b>Author:</b> {{ message.author }}</a>
+<br/>
+{% endfor %}
