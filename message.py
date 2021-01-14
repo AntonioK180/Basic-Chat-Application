@@ -8,8 +8,8 @@ class Message:
 
     @staticmethod
     def all():
-        with DB as db:
-            rows = db.execute('SLECT * FROM messages').fetchall()
+        with DB() as db:
+            rows = db.execute('SELECT * FROM messages').fetchall()
             return [Message(*row) for row in rows]
 
     def create(self):
