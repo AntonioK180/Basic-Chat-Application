@@ -5,8 +5,7 @@
 
 
 {% for message in messages %}
-<b> Sent_by:</b><p>{{ message.sent_by }}</p>
-<br/>
+<p>{{ message.sent_by }} : {{message.content}}</p>
 {% endfor %}
 
 

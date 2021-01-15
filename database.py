@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_NAME = 'chat.db'
+DB_NAME = 'chat_application.db'
 
 conn = sqlite3.connect(DB_NAME)
 
@@ -20,9 +20,10 @@ conn.cursor().execute('''
     (
         message_id INTEGER PRIMARY KEY AUTOINCREMENT,
         sender_id INTEGER,
+        receiver_id INTEGER,
         sent_by  TEXT,
         content TEXT,
-        FOREIGN KEY(sender_id) REFERENCES friends(friend_id)
+        FOREIGN KEY(receiver_id) REFERENCES friends(friend_id)
     )
 ''')
 conn.commit()
