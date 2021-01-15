@@ -9,7 +9,7 @@ conn.cursor().execute('''
     CREATE TABLE IF NOT EXISTS friends
     (
         friend_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name  TEXT,
+        name  TEXT  UNIQUE,
         nickname TEXT
     )
 ''')

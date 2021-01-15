@@ -1,12 +1,31 @@
 from flask import Flask
 from flask import render_template, request, redirect, url_for
+import logging
 from message import Message
 from friend import Friend
+
+
+app = Flask(__name__)
+
+
+logFormatStr = '[%(asctime)s] p%(process)s {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s'
+logging.basicConfig(format=logFormatStr, filename="global.log", level=logging.DEBUG)
+formatter = logging.Formatter(logFormatStr, '%m-%d %H:%M:%S')
+fileHandler = logging.FileHandler("flask-app.log")
+fileHandler.setLevel(logging.DEBUG)
+fileHandler.setFormatter(formatter)
+streamHandler = logging.StreamHandler()
+streamHandler.setLevel(logging.DEBUG)
+streamHandler.setFormatter(formatter)
+app.logger.addHandler(fileHandler)
+app.logger.addHandler(streamHandler)
+
+app.logger.info("Logging is set up.")
+
 
 my_id = 9
 my_name = "Antonio"
 
-app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
@@ -22,8 +41,9 @@ def show_friends():
 def new_friend():
     if request.method == 'POST':
         name = request.form['friend_name']
-        Friend(None, name, None).create()
+        added_friend = Friend(None, name, None).create()
 
+    app.logger.debug('Friend with name: %s was just added.', added_friend.name)
     return redirect(url_for('show_friends'))
 
 
@@ -32,6 +52,7 @@ def delete_friend(friend_id):
     friend = Friend.find(friend_id)
     friend.delete()
 
+    app.logger.debug('Friend with name: %s was just deleted.', friend.name)
     return redirect(url_for('show_friends'))
 
 
@@ -52,6 +73,7 @@ def edit_nickname(friend_id):
         friend.nickname = request.form['nickname']
         friend.save()
 
+        app.logger.debug('The nickname for %s was edited.', friend.name)
         return redirect(url_for('show_chat', friend_id=friend.friend_id))
 
 
@@ -62,4 +84,5 @@ def new_message():
         values = (None, my_id, friend.friend_id, my_name, request.form['message'])
         Message(*values).create()
 
+        app.logger.debug('%s just received a new message.', friend.name)
         return redirect(url_for('show_chat', friend_id=friend.friend_id))

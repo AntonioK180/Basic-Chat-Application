@@ -1,0 +1,84 @@
+[01-15 21:04:27] p18512 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:22} INFO - Logging is set up.
+[01-15 21:07:43] p18709 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:22} INFO - Logging is set up.
+[01-15 21:08:48] p18844 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:22} INFO - Logging is set up.
+[01-15 21:14:49] p19005 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:14:56] p19005 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:74} DEBUG - The nickname for asdas was edited.
+[01-15 21:15:54] p19053 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:16:06] p19053 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 44, in new_friend
+    Friend(None, name, None).create()
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/friend.py", line 26, in create
+    row = db.execute('INSERT INTO friends (name, nickname) VALUES (?, ?)', (self.name, self.nickname))
+sqlite3.IntegrityError: UNIQUE constraint failed: friends.name
+[01-15 21:16:19] p19053 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:74} DEBUG - The nickname for Mine was edited.
+[01-15 21:16:39] p19103 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:20:26] p19165 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:20:35] p19165 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:46} DEBUG - Friend with id None was just added.
+[01-15 21:21:14] p19186 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:21:21] p19186 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 44, in new_friend
+    added_friend = Friend(name, None).create()
+TypeError: __init__() missing 1 required positional argument: 'nickname'
+[01-15 21:23:29] p19376 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:23:58] p19376 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:46} DEBUG - Friend with id None was just added.
+[01-15 21:24:03] p19376 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:46} DEBUG - Friend with id None was just added.
+[01-15 21:24:10] p19376 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:75} DEBUG - The nickname for NewFrendos was edited.
+[01-15 21:24:15] p19376 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:75} DEBUG - The nickname for NewFrendos was edited.
+[01-15 21:25:23] p19431 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:25:26] p19431 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends [GET]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 37, in show_friends
+    return render_template('friends.html', friends=Friend.all())
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/friend.py", line 14, in all
+    return [Friend(*row) for row in rows]
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/friend.py", line 14, in <listcomp>
+    return [Friend(*row) for row in rows]
+TypeError: __init__() takes 3 positional arguments but 4 were given
+[01-15 21:26:14] p19459 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:26:27] p19474 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:26:36] p19474 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:46} DEBUG - Friend with name NONKAA was just added.
+[01-15 21:27:28] p19509 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:27:38] p19509 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:55} DEBUG - Friend with name MyNameIs was just deleted.
+[01-15 21:29:56] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[01-15 21:30:03] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:87} DEBUG - Antonio just received a new message.
+[01-15 21:30:07] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:87} DEBUG - Antonio just received a new message.
+[01-15 21:30:14] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:87} DEBUG - Mine just received a new message.
+[01-15 21:30:21] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:55} DEBUG - Friend with name: Mine was just deleted.
