@@ -6,15 +6,27 @@ conn = sqlite3.connect(DB_NAME)
 
 
 conn.cursor().execute('''
-    CREATE TABLE IF NOT EXISTS messages
+    CREATE TABLE IF NOT EXISTS friends
     (
-        message_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        author TEXT,
-        content TEXT
+        friend_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name  TEXT
     )
 ''')
-
 conn.commit()
+
+
+conn.cursor().execute('''
+    CREATE TABLE IF NOT EXISTS Messages
+    (
+        message_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        sender_id INTEGER,
+        sent_by  TEXT,
+        content TEXT,
+        FOREIGN KEY(sender_id) REFERENCES friends(friend_id)
+    )
+''')
+conn.commit()
+
 
 
 class DB:

@@ -3,6 +3,6 @@
 <h1> All Messages </h1>
 
 {% for message in messages %}
-<a href="/messages/{{ message.message_id }}"><b>Author:</b> {{ message.author }}</a>
+<a href="/messages/{{ message.message_id }}"><b> Sent_by:</b> {{ message.sent_by }}</a>
 <br/>
 {% endfor %}
