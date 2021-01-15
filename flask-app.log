@@ -82,3 +82,4 @@ TypeError: __init__() takes 3 positional arguments but 4 were given
 [01-15 21:30:07] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:87} DEBUG - Antonio just received a new message.
 [01-15 21:30:14] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:87} DEBUG - Mine just received a new message.
 [01-15 21:30:21] p19564 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:55} DEBUG - Friend with name: Mine was just deleted.
+[01-15 21:40:01] p19835 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.

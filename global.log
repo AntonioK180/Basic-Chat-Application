@@ -144,3 +144,6 @@ TypeError: __init__() takes 3 positional arguments but 4 were given
 [2021-01-15 21:30:21,404] p19564 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [15/Jan/2021 21:30:21] "[32mPOST /friends/2/delete HTTP/1.1[0m" 302 -
 [2021-01-15 21:30:21,428] p19564 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [15/Jan/2021 21:30:21] "[37mGET /friends HTTP/1.1[0m" 200 -
 [2021-01-15 21:30:30,378] p19564 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [15/Jan/2021 21:30:30] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-15 21:40:01,980] p19835 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:23} INFO - Logging is set up.
+[2021-01-15 21:40:01,996] p19835 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-15 21:40:06,579] p19835 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [15/Jan/2021 21:40:06] "[37mGET /friends HTTP/1.1[0m" 200 -
