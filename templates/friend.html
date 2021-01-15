@@ -1,11 +1,12 @@
 <title>Friend</title>
 
-<h1>{{ friend.name }}</h1>
+<h1>{{ friend.name }} ({{friend.nickname}})</h1>
 <h2>{{ friend.friend_id }}</h2>
 
+<a href="/friends/{{ friend.friend_id }}/edit">Edit nickname</a>
 
 {% for message in messages %}
-<p>{{ message.sent_by }} : {{message.content}}</p>
+<p>{{ message.sent_by }}: {{message.content}}</p>
 {% endfor %}
 
 

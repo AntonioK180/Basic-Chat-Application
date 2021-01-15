@@ -1,6 +1,6 @@
 import sqlite3
 
-DB_NAME = 'chat_application.db'
+DB_NAME = 'chat_app.db'
 
 conn = sqlite3.connect(DB_NAME)
 
@@ -9,7 +9,8 @@ conn.cursor().execute('''
     CREATE TABLE IF NOT EXISTS friends
     (
         friend_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name  TEXT
+        name  TEXT,
+        nickname TEXT
     )
 ''')
 conn.commit()

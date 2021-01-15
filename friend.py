@@ -1,9 +1,11 @@
 from database import DB
 
 class Friend:
-    def __init__(self, friend_id, name):
+    def __init__(self, friend_id, name, nickname):
         self.friend_id = friend_id
         self.name = name
+        self.nickname = nickname
+
 
     @staticmethod
     def all():
@@ -18,3 +20,14 @@ class Friend:
             if row is None:
                 return
             return Friend(*row)
+
+    def create(self):
+        with DB() as db:
+            row = db.execute('INSERT INTO friends (name, nickname) VALUES (?, ?)', (self.name, self.nickname))
+            return self
+
+    def save(self):
+        with DB() as db:
+            values = (self.nickname, self.name)
+            db.execute('UPDATE friends SET nickname = ? WHERE name = ?', values)
+            return self

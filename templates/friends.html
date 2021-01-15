@@ -2,6 +2,11 @@
 
 <h1> All Friends </h1>
 
+<form action=/friend/new method="post">
+  <input type="text" name="friend_name">
+  <button type="Add Friend">Add</button>
+</form>
+
 {% for friend in friends %}
 <a href="/friends/{{ friend.friend_id }}"><b> Friend:</b> {{ friend.name }}</a>
 <br/>
