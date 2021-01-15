@@ -29,6 +29,16 @@ conn.cursor().execute('''
 ''')
 conn.commit()
 
+conn.cursor().execute('''
+    CREATE TABLE IF NOT EXISTS username 
+    (
+        users_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name  TEXT NOT NULL UNIQUE ,
+        password TEXT NOT NULL 
+    )
+''')
+conn.commit()
+
 
 
 class DB:

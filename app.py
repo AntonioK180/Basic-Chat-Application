@@ -3,6 +3,9 @@ from flask import render_template, request, redirect, url_for
 import logging
 from message import Message
 from friend import Friend
+from username import  User
+from flask_httpauth import HTTPBasicAuth
+import hashlib
 
 
 app = Flask(__name__)
@@ -26,13 +29,27 @@ app.logger.info("Logging is set up.")
 my_id = 9
 my_name = "Antonio"
 
+@app.route('/', methods=['GET', 'POST'])
+def verify():
+    if request.method == 'GET':
+        return render_template('register.html')
+    elif request.method == 'POST':
+        values = (
+            None,
+            request.form['username'],
+            User.hash_password(request.form['password'])
+        )
+        User(*values).create()
 
-@app.route('/')
+        return redirect(url_for('show_friends'))
+
+@app.route('/home')
 def hello_world():
     return redirect(url_for('show_friends'))
 
 
 @app.route('/friends')
+@auth.login_required
 def show_friends():
     return render_template('friends.html', friends=Friend.all())
 
@@ -86,3 +103,11 @@ def new_message():
 
         app.logger.debug('%s just received a new message.', friend.name)
         return redirect(url_for('show_chat', friend_id=friend.friend_id))
+
+    
+@auth.verify_password
+def verify_password(username,password):
+    user=User.find_by_username(username)
+    if user:
+        return user.verify_password(hashlib.sha256(password.encode('utf-8')).hexdigest())
+    return False
