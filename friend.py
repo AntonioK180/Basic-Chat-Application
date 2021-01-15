@@ -34,4 +34,5 @@ class Friend:
 
     def delete(self):
         with DB() as db:
+            db.execute('DELETE FROM Messages WHERE receiver_id = ?', (self.friend_id,))
             db.execute('DELETE FROM friends WHERE friend_id = ?', (self.friend_id,))

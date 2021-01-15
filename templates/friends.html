@@ -8,6 +8,6 @@
 </form>
 
 {% for friend in friends %}
-<a href="/friends/{{ friend.friend_id }}"><b> Friend:</b> {{ friend.name }}</a>
+<a href="/friends/{{ friend.friend_id }}"><b> Friend:</b> {{ friend.name }} ({{ friend.nickname }})</a>
 <br/>
 {% endfor %}

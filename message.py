@@ -1,7 +1,7 @@
 from database import DB
 
 class Message:
-    def __init__(self, message_id, receiver_id, sender_id, sent_by, content):
+    def __init__(self, message_id, sender_id, receiver_id, sent_by, content):
         self.message_id = message_id
         self.sender_id = sender_id
         self.receiver_id = receiver_id
@@ -11,7 +11,7 @@ class Message:
     @staticmethod
     def all_with(friend_id):
         with DB() as db:
-            rows = db.execute('SELECT * FROM Messages WHERE sender_id = ?', (friend_id,)).fetchall()
+            rows = db.execute('SELECT * FROM Messages WHERE receiver_id = ?', (friend_id,)).fetchall()
             return [Message(*row) for row in rows]
 
     def create(self):
