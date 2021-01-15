@@ -31,3 +31,7 @@ class Friend:
             values = (self.nickname, self.name)
             db.execute('UPDATE friends SET nickname = ? WHERE name = ?', values)
             return self
+
+    def delete(self):
+        with DB() as db:
+            db.execute('DELETE FROM friends WHERE friend_id = ?', (self.friend_id,))

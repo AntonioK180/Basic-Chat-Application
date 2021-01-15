@@ -18,7 +18,7 @@ def show_friends():
     return render_template('friends.html', friends=Friend.all())
 
 
-@app.route('/friend/new', methods=['POST'])
+@app.route('/friends/new', methods=['POST'])
 def new_friend():
     if request.method == 'POST':
         name = request.form['friend_name']
@@ -45,6 +45,14 @@ def edit_nickname(friend_id):
         friend.save()
 
         return redirect(url_for('show_chat', friend_id=friend.friend_id))
+
+
+@app.route('/friends/<int:friend_id>/delete', methods=['POST'])
+def delete_friend(friend_id):
+    friend = Friend.find(friend_id)
+    friend.delete()
+
+    return redirect(url_for('show_friends'))
 
 
 @app.route('/message/new', methods=['POST'])

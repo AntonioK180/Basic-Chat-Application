@@ -4,6 +4,11 @@
 <h2>{{ friend.friend_id }}</h2>
 
 <a href="/friends/{{ friend.friend_id }}/edit">Edit nickname</a>
+<a href="/friends">All friends</a>
+
+<form action="/friends/{{friend.friend_id}}/delete" method="post">
+  <button type="submit">Delete</button>
+</form>
 
 {% for message in messages %}
 <p>{{ message.sent_by }}: {{message.content}}</p>
