@@ -1,5 +1,4 @@
 import hashlib
-
 from database import DB
 
 
@@ -9,12 +8,12 @@ class User:
         self.username = username
         self.password = password
 
-    @property
+
     def create(self):
         with DB() as db:
             values = (self.username, self.password)
             db.execute('''
-                INSERT INTO username (username, password)
+                INSERT INTO Users (name, password)
                 VALUES (?, ?)''', values)
             return self
 
@@ -24,7 +23,7 @@ class User:
             return None
         with DB() as db:
             row = db.execute(
-                'SELECT * FROM username WHERE username = ?',
+                'SELECT * FROM Users WHERE name = ?',
                 (username,)
             ).fetchone()
             if row:
