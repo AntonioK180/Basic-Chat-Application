@@ -1,0 +1,146 @@
+[2021-01-16 17:32:13,849] p2704 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:32:13,868] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:32:49,185] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:49] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:32:52,743] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:52] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:32:54,186] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:32:54,197] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:54] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:32:55,453] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:55] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:32:59,799] p2704 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:32:59] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:38:46,570] p3102 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:39:07,155] p3108 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:39:18,916] p3114 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:39:47,258] p3124 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:39:47,272] p3124 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:42:52,891] p3249 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:42:52,905] p3249 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:43:13,226] p3256 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:43:13,245] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:43:30,155] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:30] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:31,706] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:31] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:35,289] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:35] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:43:35,309] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:35] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:42,006] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:42] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:43,025] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:43] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:45,573] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-16 17:43:49,277] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:49] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:43:49,290] p3256 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:43:49] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:43:53,608] p3900 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:43:53,622] p3900 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:44:46,577] p3912 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:44:46,596] p3912 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:44:52,088] p3912 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:44:52] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:44:56,028] p3912 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:44:56] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:45:00,079] p3912 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:45:00] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:45:02,296] p3912 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 83, in new_friend
+    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+UnboundLocalError: local variable 'new_friendship' referenced before assignment
+[2021-01-16 17:45:02,299] p3912 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:45:02] "[35m[1mPOST /friends/new HTTP/1.1[0m" 500 -
+[2021-01-16 17:49:06,695] p4531 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:49:06,709] p4531 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:49:18,525] p4543 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:49:18,538] p4543 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:49:40,397] p4554 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:50:32,968] p4619 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:50:32,982] p4619 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:50:50,707] p4627 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:50:50,723] p4627 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:51:03,389] p4636 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:51:03,405] p4636 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:51:08,229] p4636 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:51:08] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:51:09,484] p4636 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:51:09] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:51:11,727] p4636 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 78, in new_friend
+    if name in uss:
+TypeError: argument of type 'NoneType' is not iterable
+[2021-01-16 17:51:11,730] p4636 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:51:11] "[35m[1mPOST /friends/new HTTP/1.1[0m" 500 -
+[2021-01-16 17:51:31,252] p4696 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:51:31,266] p4696 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:51:49,390] p4710 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:51:49,403] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:51:58,524] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:51:58] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:52:02,192] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:52:02] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:52:06,796] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:52:06] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:52:09,379] p4710 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:83} DEBUG - Friend with name: Vasil was just added by Antonio.
+[2021-01-16 17:52:09,381] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:52:09] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:52:09,396] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:52:09] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:52:12,453] p4710 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 83, in new_friend
+    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+UnboundLocalError: local variable 'new_friendship' referenced before assignment
+[2021-01-16 17:52:12,455] p4710 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:52:12] "[35m[1mPOST /friends/new HTTP/1.1[0m" 500 -
+[2021-01-16 17:53:40,565] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:53:40,583] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:54:56,012] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:54:56] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:54:57,623] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:54:57] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:00,946] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:00] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:55:00,958] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:00] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:01,853] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:01] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:07,777] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:07] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:55:07,789] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:07] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:09,391] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:09] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:11,738] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:11] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-16 17:55:11,750] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:11] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:12,855] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:12] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:55:16,623] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:16] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:55:19,995] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:19] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:22,621] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Foncho.
+[2021-01-16 17:55:22,623] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:22] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:55:22,636] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:22] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:24,951] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - This user is not registered.
+[2021-01-16 17:55:24,953] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:24] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:55:24,970] p5104 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:55:24] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:55:53,992] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-16 17:55:54,006] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-16 17:56:03,184] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:03] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-16 17:56:06,064] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:06] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-16 17:56:10,352] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:10] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:56:13,606] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - User: Kurvi is not registered.
+[2021-01-16 17:56:13,608] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:13] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:56:13,625] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:13] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:56:18,689] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Foncho.
+[2021-01-16 17:56:18,691] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:18] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:56:18,708] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:18] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:56:21,596] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Foncho.
+[2021-01-16 17:56:21,598] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:21] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-16 17:56:21,610] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:21] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-16 17:56:32,230] p5473 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [16/Jan/2021 17:56:32] "[37mGET /friends/3 HTTP/1.1[0m" 200 -

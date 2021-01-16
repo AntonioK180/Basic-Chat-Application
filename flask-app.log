@@ -1,0 +1,76 @@
+[01-16 17:32:13] p2704 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:38:46] p3102 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:39:07] p3108 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:39:18] p3114 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:39:47] p3124 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:42:52] p3249 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:43:13] p3256 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:43:53] p3900 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:44:46] p3912 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:45:02] p3912 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 83, in new_friend
+    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+UnboundLocalError: local variable 'new_friendship' referenced before assignment
+[01-16 17:49:06] p4531 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:49:18] p4543 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:49:40] p4554 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:50:32] p4619 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:50:50] p4627 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:51:03] p4636 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:51:11] p4636 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 78, in new_friend
+    if name in uss:
+TypeError: argument of type 'NoneType' is not iterable
+[01-16 17:51:31] p4696 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:51:49] p4710 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:52:09] p4710 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:83} DEBUG - Friend with name: Vasil was just added by Antonio.
+[01-16 17:52:12] p4710 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 83, in new_friend
+    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+UnboundLocalError: local variable 'new_friendship' referenced before assignment
+[01-16 17:53:40] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:55:22] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Foncho.
+[01-16 17:55:24] p5104 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - This user is not registered.
+[01-16 17:55:53] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 17:56:13] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - User: Kurvi is not registered.
+[01-16 17:56:18] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Foncho.
+[01-16 17:56:21] p5473 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Foncho.

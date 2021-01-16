@@ -30,6 +30,7 @@ app.logger.info("Logging is set up.")
 my_id = None
 my_name = "Admin"
 
+
 @app.route('/')
 def home():
     return render_template('home.html')
@@ -73,9 +74,13 @@ def new_friend():
     if request.method == 'POST':
         name = request.form['friend_name']
         user = User.find_by_username(my_name)
-        new_friendship = Friendship(None, user.username, name, None, None).create()
+        users_list = User.get_usernames()
+        if name in users_list:
+            new_friendship = Friendship(None, user.username, name, None, None).create()
+            app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+        else:
+            app.logger.error('User: %s is not registered.', name)
 
-    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
     return redirect(url_for('show_friends'))
 
 

@@ -30,6 +30,17 @@ class User:
                 return User(*row)
 
     @staticmethod
+    def get_usernames():
+        with DB() as db:
+            rows = db.execute('SELECT name FROM Users').fetchall()
+            if rows:
+                names = []
+                for row in rows:
+                    names.append(row[0])
+                return names
+
+
+    @staticmethod
     def hash_password(password):
         return hashlib.sha256(password.encode('utf-8')).hexdigest()
 
