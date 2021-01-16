@@ -7,7 +7,7 @@
   <button type="Add Friend">Add</button>
 </form>
 
-{% for friend in friends %}
-<a href="/friends/{{ friend.friend_id }}"><b> Friend:</b> {{ friend.name }} ({{ friend.nickname }})</a>
+{% for friend in friendships %}
+<a href="/friends/{{ friend.friendship_id}}"><b> Friend:</b> {{ friend.sender_name }} who added ({{ friend.friend_name }})</a>
 <br/>
 {% endfor %}

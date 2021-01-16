@@ -1,22 +1,22 @@
 <title>Friend</title>
 
-<h1>{{ friend.name }} ({{friend.nickname}})</h1>
-<h2>{{ friend.friend_id }}</h2>
+<h1>{{ friendship.friend_name }} ({{friendship.nickname_2}})</h1>
+<h2>Friendship ID: {{ friendship.friendship_id }}</h2>
 
-<a href="/friends/{{ friend.friend_id }}/edit">==Edit nickname==</a>
+<a href="/friends/{{ friendship.friendship_id }}/edit">==Edit nickname==</a>
 <a href="/friends">==All friends==</a>
 
-<form action="/friends/{{friend.friend_id}}/delete" method="post">
+<form action="/friends/{{friendship.friendship_id}}/delete" method="post">
   <button type="submit">Delete</button>
 </form>
 
 {% for message in messages %}
-<p>{{ message.sent_by }}: {{message.content}}</p>
+<p>{{ message.sent_by_id }}: {{message.content}}</p>
 {% endfor %}
 
 
 <form action=/message/new method="post">
   <input type="text" name="message">
-  <input type="hidden" name="friend_id" value="{{ friend.friend_id }}">
+  <input type="hidden" name="friendship_id" value="{{ friendship.friendship_id }}">
   <button type="submit">Send</button>
 </form>

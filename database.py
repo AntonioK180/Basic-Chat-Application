@@ -5,6 +5,19 @@ DB_NAME = 'chat_app.db'
 conn = sqlite3.connect(DB_NAME)
 
 
+
+conn.cursor().execute('''
+    CREATE TABLE IF NOT EXISTS Users
+    (
+        users_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name  TEXT NOT NULL UNIQUE ,
+        password TEXT NOT NULL
+    )
+''')
+conn.commit()
+
+
+
 conn.cursor().execute('''
     CREATE TABLE IF NOT EXISTS friends
     (
@@ -17,25 +30,25 @@ conn.commit()
 
 
 conn.cursor().execute('''
-    CREATE TABLE IF NOT EXISTS Messages
+    CREATE TABLE IF NOT EXISTS Friendships
     (
-        message_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        sender_id INTEGER,
-        receiver_id INTEGER,
-        sent_by  TEXT,
-        content TEXT,
-        FOREIGN KEY(receiver_id) REFERENCES friends(friend_id)
+        friendship_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        sender_name TEXT,
+        friend_name TEXT UNIQUE,
+        nickname_1 TEXT,
+        nickname_2 TEXT
     )
 ''')
 conn.commit()
 
 
 conn.cursor().execute('''
-    CREATE TABLE IF NOT EXISTS Users
+    CREATE TABLE IF NOT EXISTS Messages
     (
-        users_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name  TEXT NOT NULL UNIQUE ,
-        password TEXT NOT NULL
+        message_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        friendship_id INTEGER,
+        sent_by_id TEXT,
+        content TEXT
     )
 ''')
 conn.commit()

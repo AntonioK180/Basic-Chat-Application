@@ -21,6 +21,14 @@ class Friend:
                 return
             return Friend(*row)
 
+    @staticmethod
+    def find_by_name(name):
+        with DB() as db:
+            row = db.execute('SELECT * FROM friends WHERE name = ?', (name,)).fetchone()
+            if row is None:
+                return
+            return Friend(*row)
+
     def create(self):
         with DB() as db:
             row = db.execute('INSERT INTO friends (name, nickname) VALUES (?, ?)', (self.name, self.nickname))

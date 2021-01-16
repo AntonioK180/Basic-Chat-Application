@@ -1,1 +1,22 @@
-[01-15 23:22:57] p23901 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[01-16 16:04:27] p25756 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:29} INFO - Logging is set up.
+[01-16 16:05:05] p25756 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Kapa was just added by Antonio.
+[01-16 16:05:10] p25756 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Kappa was just added by Vasil.
+[01-16 16:05:12] p25756 {/home/anton/.local/lib/python3.6/site-packages/flask/app.py:1892} ERROR - Exception on /friends/new [POST]
+Traceback (most recent call last):
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anton/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py", line 77, in new_friend
+    added_friend = Friend(None, name, None).create()
+  File "/home/anton/school/SoftwareEngineering/Basic-Chat-Application/friend.py", line 34, in create
+    row = db.execute('INSERT INTO friends (name, nickname) VALUES (?, ?)', (self.name, self.nickname))
+sqlite3.IntegrityError: UNIQUE constraint failed: friends.name
