@@ -35,6 +35,12 @@ class Friendship:
                 VALUES (?, ?, ?, ?)''', values)
             return self
 
+    def save(self):
+        with DB() as db:
+            values =  (self.sender_name, self.friend_name, self.nickname_1, self.nickname_2, self.friendship_id)
+            db.execute('UPDATE Friendships SET sender_name = ?, friend_name = ?, nickname_1 = ?, nickname_2 = ? WHERE friendship_id = ?', values)
+            return self
+
     def delete(self):
         with DB() as db:
             db.execute('DELETE FROM Friendships WHERE friendship_id = ?', (self.friendship_id,))

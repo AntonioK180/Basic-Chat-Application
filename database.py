@@ -17,24 +17,12 @@ conn.cursor().execute('''
 conn.commit()
 
 
-
-conn.cursor().execute('''
-    CREATE TABLE IF NOT EXISTS friends
-    (
-        friend_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name  TEXT  UNIQUE,
-        nickname TEXT
-    )
-''')
-conn.commit()
-
-
 conn.cursor().execute('''
     CREATE TABLE IF NOT EXISTS Friendships
     (
         friendship_id INTEGER PRIMARY KEY AUTOINCREMENT,
         sender_name TEXT,
-        friend_name TEXT UNIQUE,
+        friend_name TEXT,
         nickname_1 TEXT,
         nickname_2 TEXT
     )

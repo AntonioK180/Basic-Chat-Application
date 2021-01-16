@@ -1,9 +1,9 @@
 <title>Friend</title>
 
-<h1>{{ friendship.friend_name }} ({{friendship.nickname_2}})</h1>
+<h1>{{ friendship.sender_name }} ({{ friendship.nickname_1 }}) & {{ friendship.friend_name }} ({{ friendship.nickname_2 }})</h1>
 <h2>Friendship ID: {{ friendship.friendship_id }}</h2>
 
-<a href="/friends/{{ friendship.friendship_id }}/edit">==Edit nickname==</a>
+<a href="/friends/{{ friendship.friendship_id }}/edit">==Edit nicknames==</a>
 <a href="/friends">==All friends==</a>
 
 <form action="/friends/{{friendship.friendship_id}}/delete" method="post">

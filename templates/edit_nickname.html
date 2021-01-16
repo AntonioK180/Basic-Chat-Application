@@ -1,7 +1,10 @@
-<h1>{{friend.name}}</h1>
+<h1>{{friendship.friendship_id}}</h1>
 
-<form action="/friends/{{friend.friend_id}}/edit" method="post">
-  <label>Nickname</label>
-  <input name="nickname" value="{{friend.nickname}}">
+<form action="/friends/{{friendship.friendship_id}}/edit" method="post">
+  <label>Nickname for {{friendship.sender_name}}</label>
+  <input name="nickname_1" value="{{friendship.nickname_1}}">
+  <br></br>
+  <label>Nickname for {{friendship.friend_name}}</label>
+  <input name="nickname_2" value="{{friendship.nickname_2}}">
   <button type="submit">Submit</button>
 </form>

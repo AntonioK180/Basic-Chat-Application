@@ -6,7 +6,6 @@ from flask_httpauth import HTTPBasicAuth
 
 import hashlib
 from message import Message
-from friend import Friend
 from user import  User
 from friendship import Friendship
 
@@ -74,10 +73,9 @@ def new_friend():
     if request.method == 'POST':
         name = request.form['friend_name']
         user = User.find_by_username(my_name)
-        added_friend = Friend(None, name, None).create()
         new_friendship = Friendship(None, user.username, name, None, None).create()
 
-    app.logger.debug('Friend with name: %s was just added by %s.', added_friend.name, user.username)
+    app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
     return redirect(url_for('show_friends'))
 
 
@@ -86,7 +84,7 @@ def delete_friend(friendship_id):
     friendship = Friendship.find(friendship_id)
     friendship.delete()
 
-    app.logger.debug('Friend with name: %s was just deleted by %s.', friendship.friend_name, my_name)
+    app.logger.debug('Friend with name: %s was just deleted from %s\'s list of friends.', friendship.friend_name, my_name)
     return redirect(url_for('show_friends'))
 
 
@@ -96,20 +94,21 @@ def show_chat(friendship_id):
 
     return render_template('friend.html', messages=Message.all_with(friendship.friendship_id), friendship=friendship)
 
-'''
-@app.route('/friends/<int:friend_id>/edit', methods=['GET', 'POST'])
-def edit_nickname(friend_id):
-    friend = Friend.find(friend_id)
+
+@app.route('/friends/<int:friendship_id>/edit', methods=['GET', 'POST'])
+def edit_nickname(friendship_id):
+    friendship = Friendship.find(friendship_id)
     if request.method == 'GET':
 
-        return render_template('edit_nickname.html', friend=friend)
+        return render_template('edit_nickname.html', friendship=friendship)
     elif request.method == 'POST':
-        friend.nickname = request.form['nickname']
-        friend.save()
+        friendship.nickname_2 = request.form['nickname_2']
+        friendship.nickname_1 = request.form['nickname_1']
+        friendship.save()
 
-        app.logger.debug('The nickname for %s was edited.', friend.name)
-        return redirect(url_for('show_chat', friend_id=friend.friend_id))
-'''
+        app.logger.debug('The nickname for %s was edited.', friendship.friend_name)
+        return redirect(url_for('show_chat', friendship_id=friendship.friendship_id))
+
 
 @app.route('/message/new', methods=['POST'])
 def new_message():
