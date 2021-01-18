@@ -1,0 +1,34 @@
+body{
+    background-color: gray;
+    align-content: center;
+}
+
+#container{
+    align-self: center;
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center ;
+}
+
+#SingUp{
+    padding: 10px 10px 20px 20px;
+}
+#but{
+    alignment: right;
+}
+button{
+    height: 40px;
+    width: 60px;
+}
+label{
+    height: 40px;
+    width: 150px;
+}

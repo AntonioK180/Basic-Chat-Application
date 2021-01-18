@@ -10,7 +10,7 @@ from user import  User
 from friendship import Friendship
 
 
-app = Flask(__name__)
+app: Flask = Flask(__name__)
 auth = HTTPBasicAuth()
 
 logFormatStr = '[%(asctime)s] p%(process)s {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s'
