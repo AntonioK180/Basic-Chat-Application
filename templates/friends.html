@@ -14,12 +14,12 @@
                     <form action=/friends/new method="post">
                         <input type="text" name="friend_name">
                         <button type="Add Friend">Add</button>
-                        <button type="button">Back</button>
+                        <button type="button" onclick="window.location='/'">Back</button>
                     </form>
                 </div>
                 <div id="friends">
                     {% for friend in friendships %}
-                    <a href="/friends/{{ friend.friendship_id}}"><b> Friend:</b> {{ friend.sender_name }} who added ({{ friend.friend_name }})</a>
+                    <a href="/friends/{{ friend.friendship_id}}"><b> Friend:</b> {{ friend.sender_name }} who added {{ friend.friend_name }}</a>
                     <br/>
                     {% endfor %}
                 </div>
@@ -27,4 +27,3 @@
         </div>
     </body>
 </html>
-

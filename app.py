@@ -97,7 +97,7 @@ def delete_friend(friendship_id):
 def show_chat(friendship_id):
     friendship = Friendship.find(friendship_id)
 
-    return render_template('friend.html', messages=Message.all_with(friendship.friendship_id), friendship=friendship)
+    return render_template('friend.html', messages=Message.all_with(friendship.friendship_id), friendship=friendship, my_name=my_name)
 
 
 @app.route('/friends/<int:friendship_id>/edit', methods=['GET', 'POST'])
@@ -112,7 +112,7 @@ def edit_nickname(friendship_id):
         friendship.save()
 
         app.logger.debug('The nickname for %s was edited.', friendship.friend_name)
-        return redirect(url_for('show_chat', friendship_id=friendship.friendship_id))
+        return redirect(url_for('show_chat', friendship_id=friendship.friendship_id, my_name=my_name))
 
 
 @app.route('/message/new', methods=['POST'])
@@ -123,4 +123,4 @@ def new_message():
         Message(*values).create()
 
         app.logger.debug('%s just sent a new message.', my_name)
-        return redirect(url_for('show_chat', friendship_id=friendship_id)) #, friendship_id=friendship_id))
+        return redirect(url_for('show_chat', friendship_id=friendship_id, my_name=my_name))

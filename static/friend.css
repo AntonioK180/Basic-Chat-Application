@@ -3,7 +3,7 @@ body{
 }
 #container{
     background-color: white;
-    width: 1900px;
+    width: 100vw;
     height: 980px;
     margin-left: auto;
     margin-right: auto;
@@ -16,13 +16,13 @@ body{
 #messages{
     padding: 10px 10px;
     border: 3px solid black;
-    width: 1497px;
+    width: 70vw;
     float: left;
 }
 
 
 #send{
-    width: 1497px;
+    width: 60vw;
     float: bottom;
     clear: both;
 
@@ -31,17 +31,16 @@ body{
 #options{
     padding: 10px 10px  ;
     border: 3px solid black;
-    width: 349px;
+    width: 20vw;
     float: right;
 }
 #mess {
-    border: 1px solid black;
     clear: both;
 }
 
 input{
     text-align-all: left;
-    padding-right:1200px;
+    padding-right: 50vw;
     padding-bottom:5px;
     padding-top: 5px;
 }

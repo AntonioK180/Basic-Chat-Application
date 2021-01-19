@@ -8,18 +8,17 @@ body{
 }
 #container{
     background-color: white;
-    width: 1580px;
+    width: 100vw;
     height: 980px;
     margin-left: auto;
     margin-right: auto;
-
 }
 button{
     padding: 5px 20px;
 }
 
 input{
-    padding: 5px 1200px 5px 1px;
+    padding: 5px 60vw 5px 1px;
 }
 a{
     padding-left: 10px;
