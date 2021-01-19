@@ -1,0 +1,118 @@
+[2021-01-19 07:30:34,880] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-19 07:30:34,897] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-19 07:30:42,644] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:42] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:42,720] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:42] "[37mGET /static/home.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:42,734] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:30:44,593] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:44] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:44,658] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:44] "[37mGET /static/register.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:47,513] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:47] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-19 07:30:47,521] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:47] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:48,546] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:48] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-19 07:30:52,475] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:52] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:52,509] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:52] "[37mGET /static/friends.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:30:52,514] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:30:56,310] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - User: fdasf is not registered.
+[2021-01-19 07:30:56,312] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:56] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:30:56,325] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:30:56] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:03,373] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:03] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:03,629] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:03] "[37mGET /static/home.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:03,678] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:31:04,531] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:04] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:04,563] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:04] "[37mGET /static/register.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:11,045] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:11] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:11,051] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:11] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:11,903] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:11] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:16,591] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:16] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-19 07:31:20,345] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:20] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:20,387] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:20] "[37mGET /static/friends.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:20,392] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:31:23,935] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Vasil.
+[2021-01-19 07:31:23,937] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:23] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:24,066] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:24] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:25,046] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:25] "[37mGET /friends/1 HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:25,082] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:25] "[37mGET /static/friend.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:30,004] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:125} DEBUG - Vasil just sent a new message.
+[2021-01-19 07:31:30,008] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:30] "[32mPOST /message/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:30,016] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:30] "[37mGET /friends/1?my_name=Vasil HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:35,329] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:125} DEBUG - Vasil just sent a new message.
+[2021-01-19 07:31:35,331] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:35] "[32mPOST /message/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:35,340] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:35] "[37mGET /friends/1?my_name=Vasil HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:37,025] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:37] "[37mGET /friends/1/edit HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:37,059] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:37] "[37mGET /static/edit_nickname.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:44,949] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:114} DEBUG - The nickname for Antonio was edited.
+[2021-01-19 07:31:44,951] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:44] "[32mPOST /friends/1/edit HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:44,959] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:44] "[37mGET /friends/1?my_name=Vasil HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:50,673] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:92} DEBUG - Friend with name: Antonio was just deleted from Vasil's list of friends.
+[2021-01-19 07:31:50,675] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:50] "[32mPOST /friends/1/delete HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:50,684] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:50] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:53,968] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Vasil.
+[2021-01-19 07:31:53,970] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:53] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:54,039] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:54] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:54,668] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:54] "[37mGET /friends/2 HTTP/1.1[0m" 200 -
+[2021-01-19 07:31:57,242] p26246 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:125} DEBUG - Vasil just sent a new message.
+[2021-01-19 07:31:57,245] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:57] "[32mPOST /message/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:31:57,284] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:31:57] "[37mGET /friends/2?my_name=Vasil HTTP/1.1[0m" 200 -
+[2021-01-19 07:32:03,467] p26246 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:32:03] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:33:46,872] p27262 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-19 07:33:46,889] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-19 07:33:53,149] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:33:53] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:33:53,241] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:33:53] "[37mGET /static/home.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:33:53,254] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:33:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:33:54,553] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:33:54] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:33:54,580] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:33:54] "[37mGET /static/register.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:00,528] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:00] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-19 07:34:00,535] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:00] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:01,481] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:01] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:02,190] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:02] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:02,806] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:02] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-19 07:34:06,599] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:06] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:06,634] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:06] "[37mGET /static/friends.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:06,639] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:34:10,658] p27262 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Stoyan.
+[2021-01-19 07:34:10,661] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:10] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:34:10,691] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:10] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:14,151] p27262 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Stoyan.
+[2021-01-19 07:34:14,153] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:14] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:34:14,162] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:14] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:19,170] p27262 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:82} ERROR - User: GKPPec is not registered.
+[2021-01-19 07:34:19,172] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:19] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:34:19,178] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:19] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:20,639] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:20] "[37mGET /friends/4 HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:20,668] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:20] "[37mGET /static/friend.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:23,093] p27262 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:125} DEBUG - Stoyan just sent a new message.
+[2021-01-19 07:34:23,095] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:23] "[32mPOST /message/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:34:23,104] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:23] "[37mGET /friends/4?my_name=Stoyan HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:31,880] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:31] "[37mGET /friends/4/edit HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:31,925] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:31] "[37mGET /static/edit_nickname.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:34,181] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:34] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:36,187] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:36] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:41,080] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:41] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:34:43,433] p27262 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:34:43] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:11,099] p27622 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:28} INFO - Logging is set up.
+[2021-01-19 07:35:11,113] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-01-19 07:35:17,281] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:17] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:17,378] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:17] "[37mGET /static/home.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:17,387] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:35:18,787] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:18] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:18,825] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:18] "[37mGET /static/register.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:23,543] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:23] "[32mPOST /register HTTP/1.1[0m" 302 -
+[2021-01-19 07:35:23,550] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:23] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:24,272] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:24] "[37mGET /register HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:24,949] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:24] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:25,883] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:25] "[31m[1mGET /friends HTTP/1.1[0m" 401 -
+[2021-01-19 07:35:30,275] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:30] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:30,312] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:30] "[37mGET /static/friends.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:30,316] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-01-19 07:35:32,716] p27622 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Vasil was just added by Daniel.
+[2021-01-19 07:35:32,718] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:32] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:35:32,727] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:32] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:34,624] p27622 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:80} DEBUG - Friend with name: Antonio was just added by Daniel.
+[2021-01-19 07:35:34,626] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:34] "[32mPOST /friends/new HTTP/1.1[0m" 302 -
+[2021-01-19 07:35:34,635] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:34] "[37mGET /friends HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:35,789] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:35] "[37mGET /friends/6 HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:35,828] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:35] "[37mGET /static/friend.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:37,079] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:37] "[37mGET /friends/6/edit HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:37,114] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:37] "[37mGET /static/edit_nickname.css HTTP/1.1[0m" 200 -
+[2021-01-19 07:35:40,859] p27622 {/home/anton/school/SoftwareEngineering/Basic-Chat-Application/app.py:114} DEBUG - The nickname for Antonio was edited.
+[2021-01-19 07:35:40,861] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:40] "[32mPOST /friends/6/edit HTTP/1.1[0m" 302 -
+[2021-01-19 07:35:40,871] p27622 {/home/anton/.local/lib/python3.6/site-packages/werkzeug/_internal.py:113} INFO - 127.0.0.1 - - [19/Jan/2021 07:35:40] "[37mGET /friends/6?my_name=Daniel HTTP/1.1[0m" 200 -
