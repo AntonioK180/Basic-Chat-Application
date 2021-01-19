@@ -1,0 +1,32 @@
+body{
+    background-color: gray;
+}
+#header{
+    background-color: cornflowerblue;
+    color: white;
+    padding-left: 10px;
+}
+#container{
+    background-color: white;
+    width: 1580px;
+    height: 980px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+button{
+    padding: 5px 20px;
+}
+
+input{
+    padding: 5px 1200px 5px 1px;
+}
+a{
+    padding-left: 10px;
+}
+#search{
+    padding-left: 10px;
+}
+#friends{
+    border:1px solid black;
+}

@@ -27,8 +27,10 @@ body{
     alignment: right;
 }
 button{
-    height: 50px;
-    width: 292px;
-    margin:1px 3px;
-    border: 5px solid #f1f0f0;
+    padding:15px 276.5px;
+    border: 2px solid #f1f0f0;
+}
+label{
+    height: 40px;
+    width: 150px;
 }
