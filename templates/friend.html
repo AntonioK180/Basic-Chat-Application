@@ -7,15 +7,16 @@
     <body>
         <div id="container">
             <div id="header">
-                <h1>{{ friendship.sender_name }} ({{ friendship.nickname_1 }}) & {{ friendship.friend_name }} ({{ friendship.nickname_2 }})</h1>
+                <h1>{{ friendship.sender_name }} {% if friendship.nickname_1 %}({{ friendship.nickname_1 }}){% endif %} & {{ friendship.friend_name }} {% if friendship.nickname_2 %}({{ friendship.nickname_2 }}){% endif %}</h1>
             </div>
-            <p>You are currently logged in as: {{my_name}}</p>
             <div id="mess">
                 <div id="messages">
                     <h2>Messages</h2>
-                    {% for message in messages %}
-                    <p>{{ message.sent_by_id }}: {{message.content}}</p>
-                    {% endfor %}
+                    <div id="m">
+                        {% for message in messages %}
+                        <p>{{ message.sent_by_id }}: {{message.content}}</p>
+                        {% endfor %}
+                    </div>
                     <div id="send">
                         <form action=/message/new method="post">
                             <input type="text" name="message">
@@ -24,16 +25,17 @@
                         </form>
                     </div>
                 </div>
-                <div id="options">
-                    <h2>Options</h2>
-                    <a href="/friends/{{ friendship.friendship_id }}/edit">==Edit nicknames==</a><br><br>
-                    <a href="/friends">==All friends==</a><br><br>
-                    <form action="/friends/{{friendship.friendship_id}}/delete" method="post">
-                        <button type="submit">Delete the chat</button><br><br>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    </form>
+                <div class="options">
+                    <!--<p>Friendship ID: {{ friendship.friendship_id }}</p>-->
+                    <button class="dropbtn">Options</button>
+                    <div class="content">
+                        <a href="/friends/{{ friendship.friendship_id }}/edit">Edit nicknames</a><br><br>
+                        <a href="/friends">All friends</a><br><br>
+                        <form action="/friends/{{friendship.friendship_id}}/delete" method="post">
+                            <button type="submit">Delete the chat</button>
+                        </form>
+                    </div>
                 </div>
-                <div></div>
             </div>
         </div>
     </body>

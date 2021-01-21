@@ -7,7 +7,7 @@ body{
     align-self: center;
     background-color: white;
     width: 600px;
-    height: 200px;
+    height: 250px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
@@ -16,15 +16,21 @@ body{
     background-color: cornflowerblue;
     color: white;
     text-align: center ;
+    font-size: 30px;
 }
 #options{
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
 }
 a{
-    border: 1px solid black;
+    border: 1px solid cornflowerblue;
     margin-left: 15px;
     margin-right: 15px;
-    padding: 30px 60px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: cornflowerblue;
+    border-radius: 4px;
+    font-size: 40px;
 }
+
 

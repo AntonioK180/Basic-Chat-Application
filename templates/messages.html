@@ -1,8 +1,22 @@
-<title> Messages </title>
+<html>
+    <head>
+        <title> Messages </title>
+    </head>
 
-<h1> All Messages </h1>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1> All Messages </h1>
+            </div>
+            <div id="messages">
+                {% for message in messages %}
+                <a href="/messages/{{ message.message_id }}"><b> Sent_by:</b> {{ message.sent_by }}</a>
+                <br/>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
 
-{% for message in messages %}
-<a href="/messages/{{ message.message_id }}"><b> Sent_by:</b> {{ message.sent_by }}</a>
-<br/>
-{% endfor %}
+
+

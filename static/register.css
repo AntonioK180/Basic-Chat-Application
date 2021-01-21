@@ -18,17 +18,42 @@ body{
     color: white;
     text-align: center ;
 }
+#header>h1{
+    font-size: 40px;
+}
 
 #SingUp{
-    padding: 10px 10px 20px 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+    margin-bottom: 2px;
 }
 #but{
     align-items: end;
     alignment: right;
 }
 button{
-    height: 50px;
+    height: 55px;
     width: 292px;
-    margin:1px 3px;
-    border: 5px solid #f1f0f0;
+    margin-right: 3px;
+    border: 5px solid cornflowerblue;
+    size: 10px;
+    font-size: 20px;
+    color: cornflowerblue;
+    border-radius: 4px;
+    background-color: white;
+
+}
+#but>#submit{
+    margin-right: 0;
+    margin-left: 9px;
+}
+input{
+    color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+input>p{
+    color: cornflowerblue;
 }

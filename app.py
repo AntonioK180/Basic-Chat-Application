@@ -122,8 +122,8 @@ def edit_nickname(friendship_id):
 def new_message():
     if request.method == 'POST':
         friendship_id = request.form['friendship_id']
-        values = (None, friendship_id, my_name, request.form['message'])
-        Message(*values).create()
-
-        app.logger.debug('%s just sent a new message.', my_name)
+        if content:
+            values = (None, friendship_id, my_name, content)
+            Message(*values).create()
+            app.logger.debug('%s just sent a new message.', my_name)
         return redirect(url_for('show_chat', friendship_id=friendship_id, my_name=my_name))
