@@ -25,7 +25,6 @@ streamHandler.setLevel(logging.DEBUG)
 streamHandler.setFormatter(formatter)
 app.logger.addHandler(fileHandler)
 app.logger.addHandler(streamHandler)
-
 app.logger.info("Logging is set up.")
 
 my_name = "Admin"
@@ -73,9 +72,14 @@ def new_friend():
         name = request.form['friend_name']
         user = User.find_by_username(my_name)
         users_list = User.get_usernames()
-        if name in users_list:
-            new_friendship = Friendship(None, user.username, name, None, None).create()
-            app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+        my_friends = user.get_friends()
+        if name in users_list:# and name not in my_friends:
+            if name not in my_friends:
+                new_friendship = Friendship(None, user.username, name, None, None).create()
+                app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
+            else:
+                flash('This is one of your friends already.')
+                app.logger.error("This is one of your friends already.")
         else:
             flash('This user is not registered.')
             app.logger.error('User: %s is not registered.', name)

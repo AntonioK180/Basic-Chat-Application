@@ -23,6 +23,17 @@ class User:
             db.execute('DELETE FROM Friendships WHERE id = ?', (self.id,))
 
 
+    def get_friends(self):
+        with DB() as db:
+            rows = db.execute('SELECT sender_name, friend_name FROM Friendships WHERE sender_name = ? OR friend_name = ?', (self.username, self.username)).fetchall()
+            friends = []
+            if rows:
+                for row in rows:
+                    friends.append(row[0])
+                    friends.append(row[1])
+            return friends
+
+
     @staticmethod
     def find_by_username(username):
         if not username:

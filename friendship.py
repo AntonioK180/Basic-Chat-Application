@@ -22,6 +22,7 @@ class Friendship:
                 return
             return Friendship(*row)
 
+
     def find_by_name(friend_name):
         with DB() as db:
             row = db.execute('SELECT * FROM Friendships WHERE friend_name = ?', (friend_name,)).fetchone()
