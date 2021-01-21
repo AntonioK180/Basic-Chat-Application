@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, redirect, url_for, flash
 import logging
 
 from flask_httpauth import HTTPBasicAuth
@@ -12,6 +12,7 @@ from friendship import Friendship
 
 app: Flask = Flask(__name__)
 auth = HTTPBasicAuth()
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 logFormatStr = '[%(asctime)s] p%(process)s {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s'
 logging.basicConfig(format=logFormatStr, filename="global.log", level=logging.DEBUG)
@@ -27,7 +28,6 @@ app.logger.addHandler(streamHandler)
 
 app.logger.info("Logging is set up.")
 
-my_id = None
 my_name = "Admin"
 
 
@@ -41,9 +41,7 @@ def verify_password(username, password):
     user = User.find_by_username(username)
     if user:
         global my_name
-        global my_id
         my_name = user.username
-        my_id = user.id
         return user.verify_password(hashlib.sha256(password.encode('utf-8')).hexdigest())
     return False
 
@@ -79,6 +77,7 @@ def new_friend():
             new_friendship = Friendship(None, user.username, name, None, None).create()
             app.logger.debug('Friend with name: %s was just added by %s.', new_friendship.friend_name, new_friendship.sender_name)
         else:
+            flash('This user is not registered.')
             app.logger.error('User: %s is not registered.', name)
 
     return redirect(url_for('show_friends'))

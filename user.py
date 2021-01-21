@@ -17,6 +17,12 @@ class User:
                 VALUES (?, ?)''', values)
             return self
 
+
+    def delete(self):
+        with DB() as db:
+            db.execute('DELETE FROM Friendships WHERE id = ?', (self.id,))
+
+
     @staticmethod
     def find_by_username(username):
         if not username:

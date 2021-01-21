@@ -9,6 +9,9 @@
             <div id="header">
                 <h1> All Friends </h1>
             </div>
+            {% for message in get_flashed_messages() %}
+                <p>{{ message }}</p>
+            {% endfor %}
             <div id="all">
                 <div id="search">
                     <form action=/friends/new method="post">

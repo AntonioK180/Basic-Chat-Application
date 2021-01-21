@@ -11,8 +11,7 @@ class Message:
     def all_with(friendship_id):
         with DB() as db:
             rows = db.execute('SELECT * FROM Messages WHERE friendship_id = ?', (friendship_id,)).fetchall()
-            return [Message(*row) for row in rows]
-
+            return [Message(*row) for row in rows]    
 
     def create(self):
         with DB() as db:
