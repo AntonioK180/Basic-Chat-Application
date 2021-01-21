@@ -63,7 +63,7 @@ def verify():
 @app.route('/friends')
 @auth.login_required
 def show_friends():
-    return render_template('friends.html', friendships=Friendship.all_for_u(my_name))
+    return render_template('friends.html', friendships=Friendship.all_for_u(my_name), my_name=my_name)
 
 
 @app.route('/friends/new', methods=['POST'])
@@ -122,6 +122,7 @@ def edit_nickname(friendship_id):
 def new_message():
     if request.method == 'POST':
         friendship_id = request.form['friendship_id']
+        content = request.form['message']
         if content:
             values = (None, friendship_id, my_name, content)
             Message(*values).create()
